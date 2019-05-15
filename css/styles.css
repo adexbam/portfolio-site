@@ -3,7 +3,7 @@
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --green-one: #05676e;
-  --green-two:#489c79;
+  --green-two: #489c79;
   --ade: 700;
 }
 
@@ -37,7 +37,8 @@ a {
   color: var(--primary-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -47,7 +48,6 @@ a:visited {
 
 a:active {
   color: var(--green-two);
-
 }
 
 button {
@@ -61,13 +61,14 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
 
 .button__secondary {
-  background-color:  var(--secondary-color);
+  background-color: var(--secondary-color);
   color: var(--dark-grey);
 }
 
@@ -119,14 +120,14 @@ button:hover, button:focus {
   margin-left: 15px;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 
 .grid__item {
   display: inline-block;
   width: 100%;
 }
 
-/* Styling CSS grid*/
+/* Styling CSS grid */
 
 .grid {
   display: grid;
@@ -140,46 +141,54 @@ button:hover, button:focus {
   padding: 20px;
 }
 
-/*@media query*/
+/* @media query */
 
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 button:hover,
@@ -188,11 +197,12 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
-/*ABOUT PAGE*/
+/* ABOUT PAGE */
 
 .profile__about {
   max-width: 700px;
@@ -208,9 +218,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -224,6 +236,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -247,6 +260,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -256,17 +270,17 @@ button:focus,
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-table{
+table {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-/*work PAGE*/
+/* work PAGE */
 
 .work__profile {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .standard-label {
