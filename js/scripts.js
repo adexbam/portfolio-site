@@ -53,3 +53,5 @@
     
     $emailInput.addEventListener('input', validateEmail);
   })();
+
+

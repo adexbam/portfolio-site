@@ -102,6 +102,10 @@ button:focus {
   border-bottom: 1px solid #fff;
 }
 
+.page-header .icon {
+  display: none;
+}
+
 .page-header__item {
   flex: 0 1 200px;
 }
@@ -285,4 +289,8 @@ table {
 
 .standard-label {
   display: block;
+}
+
+.grid-img {
+  width: 300px;
 }
