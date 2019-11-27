@@ -108,6 +108,13 @@ button:focus {
   background: #fff;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .page-header {
+    float: none;
+    width: 50%;
+  }
+}
+
 .page-header .icon {
   display: none;
 }
@@ -116,10 +123,18 @@ button:focus {
   flex: 0 1 200px;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .page-header__item {
+    float: none;
+    width: 100%;
+  }
+}
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
+
 
 .navigation-list {
   list-style-type: none;
@@ -179,6 +194,8 @@ button:focus {
     font-size: 22px;
   }
 }
+
+
 
 .button,
 button {
