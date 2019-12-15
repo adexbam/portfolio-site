@@ -202,8 +202,6 @@ button:focus {
   }
 }
 
-
-
 .button,
 button {
   /* overwrites browser defaults and resets the border */
@@ -382,7 +380,7 @@ table {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
