@@ -2,6 +2,7 @@
   --primary-color: #357b70;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
+  --light-grey: #d3d3d3;
   --green-one: #05676e;
   --green-two: #489c79;
   --ade: 700;
@@ -12,7 +13,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato',Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -83,6 +84,12 @@ button:focus {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .profile__portrait {
+    margin-left: 40px;
+  }
+}
+
 .page-footer {
   clear: both;
   display: flex;
@@ -92,7 +99,7 @@ button:focus {
 
 .profile {
   max-width: 700px;
-  height: 410px;
+  height: 540px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -207,7 +214,7 @@ button {
   font-family: inherit;
 
   /* styles the button */
-  background-color: var(--primary-color);
+  background-color: var(--light-grey);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -235,6 +242,18 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+.profile_about_img {
+  max-width: 350px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .profile_about_img {
+    max-width: 700px;
+    text-align: center;
+  }
 }
 
 .navigation-list_about {
@@ -317,4 +336,99 @@ table {
 
 .grid-img {
   width: 300px;
+}
+
+
+/* BLOG PAGE */
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #489c79;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 570px;
+  background: white;
+  text-align: center;
+}
+
+.main h2 {
+  font-family: 'Special Elite', cursive;
+}
+
+.main__portrait {
+  float: center;
+  width: 250px;
+  height: 390px;
+}
+
+.main_summary {
+  padding: 16px;
+  margin-top: 0px;
+  background: white;
+  text-align: left;
+}
+
+.main__design {
+  padding: 16px;
+  margin-top: 30px;
+  background: white;
+  text-align: left;
+}
+
+.main__design__portrait {
+  float: right;
+  width: 350px;
+  height: 520px;
 }
