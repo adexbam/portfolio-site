@@ -12,25 +12,17 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a href="index.html"><img class="page-header__item" src="img/adexbam-logo1.png" alt="personal logo for adexbam"></a><!--add logo-->
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a role="menuitem" href="index.html" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a role="menuitem" href="about.html" class="navigation-list__item navigation-list__item--active">About me</a>
-          </li>
-          <li role="presentation">
-            <a role="menuitem" href="contact.html" class="navigation-list__item navigation-list__item--active">Contact</a>
-          </li>
-          <li role="presentation">
-            <a role="menuitem" href="works.html" class="navigation-list__item navigation-list__item--active">Works</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+   <div class="topnav" id="myTopnav">
+      <img href="index.html" class="img-icon" src="img/adexbam-logo1.png" alt="logo for adexbam">
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#works">Works</a>
+      <a href="index.html#about">About me</a>
+      <a href="index.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+   </div>
+   <br><br>
 
     <section class="work__profile">
        <h1>Works</h1>
@@ -117,6 +109,15 @@
              <a href="https://github.com/adexbam/myPokedex-js-app">See project on GitHub</a><br>
              <a href="https://adexbam.github.io/myPokedex-js-app/">Visit project website</a>
           </div>
+          <div class="grid__item">
+            <img class="grid-img" src="img/pokedex3.png" alt="pokedex3 img">
+            <h2>Showcasing process and skill</h2>
+            <p>
+               Project Case Study for Chat-app, created for mobile devices with React Native
+            </p>
+            <a href="https://github.com/adexbam/portfolio-site/blob/master/blog.html">See project on GitHub</a><br>
+            <a href="http://adewunmi.de/blog.html">Visit project website</a>
+         </div>
        </div><!--grid ending-->
     </section>
 
