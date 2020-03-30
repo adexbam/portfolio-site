@@ -338,10 +338,11 @@ table {
 }
 
 
-/* BLOG PAGE */
+/* PAGE */
 .img-icon {
   border: none;
-  margin-top: 10px;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -351,22 +352,38 @@ table {
 }
 
 .topnav {
-  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 8vh;
   background-color: white;
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   top: 0;
   width: 100%;
 }
 
 .topnav .navlink {
-  float: right;
-  display: block;
+  /*float: right;display: block;*/
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
   color: #00885a;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.topnav .navlink a {
+  /*float: right;display: block;*/
+  color: #00885a;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.topnav .navlink li {
+list-style: none;
 }
 
 .topnav .navlink:hover {
@@ -385,6 +402,13 @@ table {
 
 .fa {
   font-size: x-large;
+  margin-left: 170px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav  {
+    align-items: flex-start;
+    }
 }
 
 @media screen and (max-width: 600px) {
