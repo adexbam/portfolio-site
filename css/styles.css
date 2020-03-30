@@ -337,16 +337,17 @@ table {
   border-radius: 5px;
 }
 
-
 /* PAGE */
-.img-icon {
+
+
+.img-icon-logo {
   border: none;
-  margin-right: auto;
   cursor: pointer;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .img-icon {
+  .img-icon-logo {
     width: 150px;
   }
 }
@@ -386,12 +387,12 @@ table {
 list-style: none;
 }
 
-.topnav .navlink:hover {
+.topnav .navlink li:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav .navlink.active {
+.topnav .navlink li.active {
   background-color: #4CAF50;
   color: white;
 }
