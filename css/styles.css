@@ -77,11 +77,26 @@ button:focus {
   text-decoration: none;
 }
 
+.profile {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 .profile__portrait {
   float: left;
   width: 300px;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 60px;
+}
+
+.profile p {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,13 +110,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-.profile {
-  max-width: 700px;
-  height: 540px;
-  margin: 0 auto;
-  margin-top: 100px;
 }
 
 .page-header {
@@ -344,6 +352,7 @@ table {
   border: none;
   cursor: pointer;
   margin-right: auto;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
