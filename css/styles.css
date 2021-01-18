@@ -164,6 +164,8 @@ button:focus {
 .grid__item {
   display: inline-block;
   width: 100%;
+  background-color: whitesmoke;
+  padding: 20px;
 }
 
 /* Styling CSS grid */
@@ -172,11 +174,6 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
-}
-
-.grid__item {
-  background-color: whitesmoke;
   padding: 20px;
 }
 
