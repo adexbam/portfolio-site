@@ -107,7 +107,8 @@ button:focus {
 
 @media screen and (max-width: 600px) {
   .profile__portrait {
-    margin-left: 40px;
+    width: 200px;
+    margin-left: 60px;
   }
 }
 
