@@ -84,13 +84,6 @@ button:focus {
   margin-top: 100px;
 }
 
-@media screen and (max-width: 600px) {
-  .profile {
-    max-width: 100vw;
-    height: auto;
-  }
-}
-
 .profile__portrait {
   float: left;
   width: 300px;
@@ -107,9 +100,32 @@ button:focus {
 }
 
 @media screen and (max-width: 600px) {
+  .profile {
+    max-width: 100vw;
+    height: auto;
+  }
+
   .profile__portrait {
-    width: 200px;
-    margin-left: 60px;
+    width: 250px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .profile p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .profile a {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -416,7 +432,7 @@ list-style: none;
 }
 
 .fa {
-  font-size: x-large;
+  font-size: 48px;
   margin-left: 170px;
 }
 
