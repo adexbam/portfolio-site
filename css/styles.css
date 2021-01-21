@@ -84,6 +84,12 @@ button:focus {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .profile {
+    height: 600px;
+  }
+}
+
 .profile__portrait {
   float: left;
   width: 300px;
