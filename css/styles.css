@@ -127,6 +127,11 @@ button:focus {
     text-align: center;
   }
 
+  .profile h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
   .profile p {
     font-size: 20px;
     text-align: center;
