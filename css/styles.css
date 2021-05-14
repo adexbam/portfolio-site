@@ -113,6 +113,10 @@ button:focus {
 }
 
 .track {
+  background-color: transparent;
+}
+
+.more {
   background-color:#ccc6c6;
 }
 
