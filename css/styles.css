@@ -5,6 +5,8 @@
   --light-grey: #d3d3d3;
   --green-one: #05676e;
   --green-two: #489c79;
+  --green-three: #357b70;
+  --white: #fff;
   --ade: 700;
 }
 
@@ -17,6 +19,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  background-color: var(--green-three);
+  color: var(--white);
 }
 
 h1 {
@@ -35,7 +39,7 @@ h3 {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 a:hover,
@@ -106,6 +110,10 @@ button:focus {
 
 .profile p {
   font-size: 20px;
+}
+
+.track {
+  background-color:#767676;
 }
 
 @media screen and (max-width: 600px) {
@@ -204,6 +212,18 @@ button:focus {
   width: 100%;
   background-color: whitesmoke;
   padding: 20px;
+}
+
+.grid__item h2{
+  color: #000;
+}
+
+.grid__item p{
+  color: #000;
+}
+
+.grid__item a{
+  color: var(--green-three);
 }
 
 /* Styling CSS grid */
